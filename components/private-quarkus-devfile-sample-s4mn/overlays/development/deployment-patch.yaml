@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: private-quarkus-devfile-sample-s4mn
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-upfd-tenant/private-devfile/private-quarkus-devfile-sample-s4mn@sha256:015cb7ea92c63bdf294e3e48d93f2bdfc6f372b6720edb83c7f1ede5f7a80145
+        name: my-java-quarkus
+        resources: {}
+status: {}
